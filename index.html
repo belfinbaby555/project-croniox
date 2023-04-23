@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width = device-width, intial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="main.js"></script>
+    </head>
+<body>
+    <div class="mouse"></div>
+    <div class="social">
+        <span class="material-symbols-outlined">mail</span>
+        <p>info@restaurentmail.com</p>
+        <span class="material-symbols-outlined">call</span>
+        <p>+586 7257 256</p>
+        <div class="socialmedia">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+    </div>
+    <header>
+        <img src="/imgs/logo.png">
+        <div class="option">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">menu</a>
+            <a href="">blog</a>
+            <a href="">contact</a>
+            <a href="">reservation <span class="material-symbols-outlined">trending_flat</span></a>
+        </div>
+    </header>
+    <div class="order">
+        <h1>Delicious Food Experience</h1>
+        <p>It is long established fact that the reader get distarcted by <br> the images of the food</p>
+        <button class="getstarted">Get Started <span class="material-symbols-outlined">trending_flat</span></button>
+        <div class="booking">
+            <input type="date" class="date" >
+            <input type="time" class="date">
+            <input type="number" class="date">
+            <button class="date">Find table</button>
+        </div>
+    </div>
+    <div class="serve">
+        <div class="food">
+            <span class="material-symbols-outlined">
+                fastfood
+            </span>
+            <h2>
+                Fast Food
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque 
+            </p>
+        </div>
+        <div class="food">
+            <span class="material-symbols-outlined">
+                icecream
+            </span>
+            <h2>
+                Dessert
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque 
+            </p>
+        </div>
+        <div class="food">
+            <span class="material-symbols-outlined">
+                brunch_dining
+            </span>
+            <h2>
+                Breakfast
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque 
+            </p>
+        </div>
+        <div class="food">
+            <span class="material-symbols-outlined">
+                local_bar
+            </span>
+            <h2>
+                Drinks and Juice
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque 
+            </p>
+        </div>
+    </div>
+    <div class="history">
+        <img src="https://s1.1zoom.me/big0/233/Meat_products_Potato_Vegetables_White_background_535614_1280x853.jpg">
+        <div class="htext">Our History</div>
+        <div class="heading">Discover our glory dining</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor
+             in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+             pariatur.</p><p> Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="learnmore">Learn more About Us <span class="material-symbols-outlined">trending_flat</span></button>
+    </div>
+    <div class="menuorder">
+        <div class="heading">Our Food Menu</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod <br>tempor incididunt ut labore et dolore magna 
+            aliqua.</p>
+            <div class="menucategory">
+                <button class="all" onclick="order('all',0)">All Item</button>
+                <button class="all" onclick="order('breakfast',1)">Breakfast</button>
+                <button class="all" onclick="order('lunch',2)">Lunch</button>
+                <button class="all" onclick="order('dinner',3)">Dinner</button>
+                <button class="all" onclick="order('drink',4)">Drinks</button>
+                <button class="all"onclick="order('indian',5)">Indian</button>
+                <button class="all"onclick="order('chinese',6)">Chinese</button>
+            </div>
+            <div class="menu" id="menu">
+                <div class="item" id="breakfast">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">breakfast3
+                        <p>Lorem ipsum dolor sit </p></div>
+                    </div>
+                <div class="item" id="breakfast">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">breakfast2
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="breakfast">
+                    <img src="https://www.cookwithkushi.com/wp-content/uploads/2022/08/instantpot_chicken_biryani_00-500x500.jpg">
+                    <div class="htext">breakfast1
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch2
+                        <p>Lorem ipsum dolor sit </p></div>
+                    </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch3
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+
+                <div class="item" id="lunch">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">Lunch1
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+
+                <div class="item" id="dinner">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">dinner1
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+
+                <div class="item" id="dinner">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">dinner2
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+
+                <div class="item" id="drink">
+                    <img src="https://www.cookwithkushi.com/wp-content/uploads/2022/08/instantpot_chicken_biryani_00-500x500.jpg">
+                    <div class="htext">drink21
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="drink">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">Drinks1
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="indian">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">Indian
+                        <p>Lorem ipsum dolor sit </p></div>
+                    </div>
+                
+                <div class="item" id="chinese">
+                    <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                    <div class="htext">Chinese
+                        <p>Lorem ipsum dolor sit </p></div>
+                    </div>
+            </div>
+            <img src="/imgs/4.png" class="img">
+    </div>
+    <div class="subcribe">
+        <div>
+        <div class="htext">be always updated with us</div>
+        <p>sign in newsletter and get 25%  Special<br> discount</p>
+        <br>
+        <p><b> call us: +586 7257 256</b></p>
+        </div>
+        <form>
+            <input type="email" class="email" placeholder="Enter your email here">
+            <button class="submit">Subscribe  <i class="fa fa-paper-plane"> </i></button>
+        </form>
+        <img src="/imgs/7.png">
+    </div>
+    <div class="foodimg">
+        <h1>Latest news and Blogs</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus 
+           <br> cum commodi possimus </p>
+           <div class="carousal">
+            <div class="gallary">
+                <img src="imgs/1.jpg" onclick="image('imgs/1.jpg')">
+                <img src="imgs/2.jpg" onclick="image('imgs/2.jpg')">
+                <img src="https://assets.bonappetit.com/photos/5b9009799915d52d4edc0f73/16:9/w_4992,h_2808,c_limit/basically-pasta-pomodoro-1.jpg" onclick="image('https://assets.bonappetit.com/photos/5b9009799915d52d4edc0f73/16:9/w_4992,h_2808,c_limit/basically-pasta-pomodoro-1.jpg')">
+                <img src="imgs/4.jpg" onclick="image('imgs/4.jpg')">
+                <img src="imgs/5.jpg" onclick="image('imgs/5.jpg')">
+            </div>
+            <img src="imgs/1.jpg" id="main">
+            
+           </div>
+
+    </div>
+    <div class="feedback">
+        <div class="clientfeed">
+            <h1>Client Feedback</h1>
+            <div class="clientimg">
+                <img src="/img2/1.jpeg">
+                <img src="/img2/2.jpg">
+                <img src="/img2/3.jpeg">
+            </div>
+            <div class="clientname">Katie John
+                <p>CEO LIndenberg</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Nisi ipsam excepturi fugit aperiam, eos dicta animi officiis 
+                 ea consectetur soluta ratione itaque quo blanditiis? Ex 
+                 recusandae vitae quasi? Ullam, voluptatem.</p>
+        </div>
+        <div class="special">
+            <h1>Today's special</h1>
+            <img src="/imgs/1.jpg" alt="">
+            <p>Creamy French Toast</p>
+        </div>
+        <img src="/imgs/6.png" class="img2">
+    </div>
+    <div class="chefs">
+        <h1>Awesome Chefs</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, 
+            culpa.<br> Accusamus, harum culpa eaque .</p>
+
+            <div class="chefprofile">
+                <div class="chefcard">
+                    <img src="/img2/4.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/5.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/6.jpeg">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+            </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

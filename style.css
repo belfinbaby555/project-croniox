@@ -1,0 +1,527 @@
+*{
+    margin: 0%;
+    overflow-x: hidden;
+}
+:root{
+    --grey:rgb(228, 228, 228);
+    --font:'Great Vibes', cursive;
+    --orange:rgb(255, 72, 0);
+    --font2: 'Ubuntu', sans-serif;
+    --grey2:rgb(245, 245, 245);
+    --orangetrans:rgba(255, 72, 0, 0.75);
+}
+/*social*/
+.social{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right:20% ;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+.social span{
+    font-size: 18px !important;
+    color: black;
+    margin-top: 15px;
+}
+.social p{
+    margin-top: 14px;
+    color: black;
+    padding-left: 5px;
+    padding-right: 35px;
+}
+.socialmedia{
+    width: 150px;
+    overflow: hidden;
+    float: right;
+    margin-left: auto;
+}
+.socialmedia a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px 3px;
+    float: right;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 29, 29);
+    box-sizing: border-box;
+    padding: 0 20%;
+}
+header img{
+    width: 100px;
+    margin-top: 15px;
+}
+.option{
+    float: right;
+    margin-top: 20px;
+}
+.option a{
+    color: white;
+    margin: 0px 15px;
+    text-decoration: none;
+    font-family: var(--font2);
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.option a:hover{
+    color: var(--orange);
+}
+.option a:nth-of-type(6){
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-right: 0ch;
+}
+.option a span{
+    float: right;
+    margin-top: -2px;
+}
+/*order place*/
+.order{
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 20vw;
+    padding-right:20vw ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/9/m/r/p94632-164430420162021749d33a6.jpg?tr=tr:n-xlarge");
+}
+
+h1{
+    font-family:var(--font) ;
+    font-size: 55px;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+.order p{
+    font-size: 18px;
+    color: white;
+    overflow: hidden;
+}
+p{
+    color: grey;
+    font-size: 12px;
+    font-family:var(--font2);
+    position: relative;
+    line-height: 20px;
+}
+.getstarted{
+    width: 175px;
+    height: 40px;
+    border-radius: 200px;
+    background-color: var(--orange);
+    margin: 50px 0px;
+    border: 0ch;
+    color: white;
+    font-family: var(--font2);
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.getstarted span{
+    color: white; 
+    font-size: 30px !important;
+    margin-bottom: -10px;
+    font-weight: 100;
+    
+}
+.booking{
+    width: 100%;
+    height: 125px;
+    background-color: rgba(53, 53, 53, 0.4);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.date{
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    outline: 0cap;
+    margin: auto 10px;
+}
+/*features section*/
+.serve{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+}
+.food{
+    width: 25%;
+    height: 80px;
+    border:2px solid var(--grey);
+    box-sizing: border-box;
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    padding-left: 30px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+.food span{
+    font-size: 45px !important;
+    overflow: hidden;
+    margin-top: 15px;
+    color: var(--orange);
+    float: left;
+    padding-right: 0%;
+}
+h2{
+    font-family: var(--font2);
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: black;
+}
+.food p{
+    padding-left: 20px;
+}
+/*our history*/
+.history{
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left:20%;
+    
+}
+.history img{
+    width:700px;
+    float: right;
+    margin-right: -100px;
+}
+.htext{
+    font-family: var(--font2);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: capitalize;
+}
+.heading{
+    font-size: 50px;
+    color: var(--orange);
+    font-family: var(--font);
+}
+.history p{
+    padding-top: 30px;
+}
+.learnmore{
+    width:200px;
+    height: 35px;
+    color: white;
+    font-family: var(--font2);
+    background-color: var(--orange);
+    border: 0cap;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+.learnmore span{
+    font-weight: 100;
+    float: right;
+    margin-right: 15px;
+    margin-left: -10px;
+    margin-top: -4px;
+
+}
+/*food menu*/
+.menuorder{
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--grey2);
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+.menuorder .heading{
+    padding-top: 100px;
+}
+.menucategory{
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    margin: 25px auto;
+}
+.all{
+    background-color: transparent;
+    color: grey;
+    font-size: 15px;
+    font-family: var(--font2);
+    border: 0px;
+    width: 80px;
+}
+.menu{
+    width:60%;
+    height: 450px;
+    background-color: transparent;
+    border: 3px solid var(--orange);
+    border-style: dashed;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.item{
+    width: 90%;
+    height: 90px;
+    background-color: transparent;
+    border-bottom: 2px solid var(--orangetrans);
+    margin: 0 5%;
+}
+.item .htext{
+    padding: 0ch;
+    margin-top:20px;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+}
+.item img{
+    width: 60px;
+    border-radius: 100px;
+    float: left;
+    padding: 13px;
+}
+.item p{
+    padding-top: 10px;
+    font-weight: 300;
+}
+.img{
+   position: absolute;
+   left: -175px;
+   top: 0;
+   height: 100%;
+   z-index: 0;
+   opacity: 0.4;
+}
+/*suscription*/
+.subcribe{
+    width: 100%;
+    height: 240px;
+    background-color: var(--orange);
+    box-sizing: border-box;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.subcribe img{
+    width: 300px;
+    height: fit-content;
+    float: right;
+    margin:auto 10px
+}
+.subcribe .htext{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.subcribe p{
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.email{
+    width: 250px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    font-family: var(--font2);
+}
+.submit{
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    color: var(--orange);
+    border: 0ch;
+    border-radius: 2px;
+    font-family: var(--font2);
+    outline: 0ch;
+}
+::placeholder{
+    opacity: 1;
+}
+
+form{
+    margin: auto 50px;
+}
+/*gallary*/
+.foodimg{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),
+    url("https://img.freepik.com/premium-photo/many-red-spice-chili-peppers-free-falling-background_488220-61352.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.foodimg h1{
+    color: var(--orange);
+    padding-top: 70px;
+}
+.carousal{
+    width: 60%;
+    margin: 50px auto;
+    position: relative;
+}
+.carousal img{
+    width: 100%;
+}
+.gallary{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0,0.4);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.gallary img{
+    height: 90px;
+    margin: 5px;
+    width: 100%;
+}
+/*feedback and special food*/
+.feedback{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--grey2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.img2{
+    position: absolute;
+    height: 100%;
+    right:-50px;
+    top: 0;
+    opacity: 0.4;
+}
+.clientfeed{
+    width: 40%;
+    height: 500px;
+    background-image: linear-gradient(var(--orangetrans),var(--orangetrans)),url(/imgs/2.jpg);
+    text-align: center;
+}
+.clientfeed h1{
+    font-size: 45px;
+    padding-top: 70px;
+}
+.clientimg{
+    width: 100%;
+    height: fit-content;
+}
+.clientimg img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+.clientimg img:nth-child(odd){
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin: 20px 40px;
+}
+.clientname{
+    color: white;
+   font-family: var(--font2);
+   font-size: 20px;
+   padding-top: 20px;
+   font-size: 25px;
+   padding-bottom: 20px;
+}
+.clientname p{
+    font-size: 15px;
+    padding-top:10px;
+    color: white;
+}
+.clientfeed p{
+    color: white;
+    padding: 0px 50px;
+}
+.special{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+.special h1{
+    color: var(--orange);
+    padding-top: 70px;
+}
+.special img{
+    width: 350px;
+    border-radius: 2px;
+}
+.special p{
+    font-size: 18px;
+    color: var(--orange);
+    padding-top: 20px;
+    overflow: hidden;
+}
+/*chef introduction*/
+.chefs{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20%;
+}
+.chefs h1{
+    color: var(--orange);
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+.chefprofile{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.chefcard{
+    width: 275px;
+    height: 350px;
+    background-color: var(--grey2);
+    border: 3px solid var(--grey);
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+.chefcard img{
+    width: 70%;
+    height: 275px;
+    border-bottom: 3px solid var(--grey);
+    padding: 0 15%;
+}
+.chefcard .htext{
+    padding: 0px;
+    padding-top: 5px;
+}
+.chefcard p{
+    padding: 0px 30px;
+    padding-top: 5px;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(46, 46, 46);
+}
