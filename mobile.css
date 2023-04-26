@@ -1,0 +1,157 @@
+@media screen and (max-width:900px) {
+ .social{
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+ header{
+    padding: 0 10%;
+ }
+ .order{
+    padding: 0 10%;
+ }
+ .serve{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: 80px;
+    padding-right: 10px;
+ }
+ .food{
+    width: 100%;
+ }
+
+ .history{
+    padding-left: 10%;
+ }
+ .history img{
+    width: 600px;
+ }
+ .subcribe{
+    padding-left: 10%;
+ }
+ .carousal{
+    width: 80%;
+ }
+ .img2{
+   display: none;
+ }
+ .clientfeed{
+   width: 60%;
+  } 
+  .clientimg img{
+   width: 125px;
+   height: 125px;
+ }
+ .subcribe img{
+   display: none;
+  }
+  .special{
+   margin: 0 auto;
+  }
+  h1{
+   font-size: 45px !important;
+  }
+  .order p{
+   font-size: 15px;
+  }
+  .clientfeed p{
+   padding: 0 25px;
+  }
+  .mainlink{
+   padding: 25px 25px;
+  }
+}
+@media screen and (max-width:725px) {
+    .history img{
+        width:700px;
+        float: left;
+        margin-right:0px;
+        margin-left: -10%;
+    }
+    .foodimg h1{
+        padding-bottom: 20px;
+    }
+    .feedback{
+      display: flex;
+    flex-direction: column;
+    }
+    .menu{
+        width:90%;
+        height: 450px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 95px 95px 95px;
+    }
+    .history img{
+      width: 400px;
+   }
+   .booking{
+      flex-direction: column;
+   }
+   .date{
+      margin: 10px auto;
+      width: 50%;
+   }
+    .img{
+        display: none;
+    }
+    .carousal{
+        width: 90%;
+     }
+     .subcribe img{
+      display: none;
+     }
+     .subcribe{
+      flex-direction: column;
+      padding-left: 0%;
+     }
+     .text2{
+      text-align: center;
+     }
+     form{
+      margin: 50px auto;
+     }
+     .clientfeed{
+      width: 100%;
+     }
+     .special{
+      margin: 0 auto;
+     
+     }
+     .serve{
+      display: grid;
+      grid-template-columns:auto;
+      grid-template-rows: 80px;
+      padding-right: 10px;
+   }
+   header{
+      padding-right: 0cm;
+      position: relative;
+   }
+   .option{
+     flex-direction: column;
+     margin-top: 0cm;
+     position: absolute;
+     width: 0px;
+     right: 0px;
+     transition: 0.5s;
+   }
+   .option a{
+      margin: 15px 50px;
+      float: left;
+   }
+   .hamburger{
+      display: block;
+   }
+   footer{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto ;
+   }
+   .mainlink{
+      padding: 15px 15px;
+     }
+}
+
+
+
+

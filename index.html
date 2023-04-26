@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobile.css">
         <meta name="viewport" content="width = device-width, intial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
@@ -12,6 +16,7 @@
 <body>
     <div class="mouse"></div>
     <div class="social">
+        
         <span class="material-symbols-outlined">mail</span>
         <p>info@restaurentmail.com</p>
         <span class="material-symbols-outlined">call</span>
@@ -24,26 +29,28 @@
             <a href="#" class="fa fa-facebook"></a>
         </div>
     </div>
-    <header>
-        <img src="/imgs/logo.png">
-        <div class="option">
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">menu</a>
-            <a href="">blog</a>
-            <a href="">contact</a>
-            <a href="">reservation <span class="material-symbols-outlined">trending_flat</span></a>
-        </div>
-    </header>
+   <header>
+  <img src="/imgs/logo.png">
+  <button class="hamburger" id="hamber" onclick="ham()">&#9776;</button>
+  <nav class="option" id="option">
+    <a href="">home</a>
+    <a href="">about</a>
+    <a href="">menu</a>
+    <a href="">blog</a>
+    <a href="">contact</a>
+    <a href="">reservation <span class="material-symbols-outlined">trending_flat</span></a>
+  </nav>
+</header>
+
     <div class="order">
         <h1>Delicious Food Experience</h1>
         <p>It is long established fact that the reader get distarcted by <br> the images of the food</p>
         <button class="getstarted">Get Started <span class="material-symbols-outlined">trending_flat</span></button>
         <div class="booking">
-            <input type="date" class="date" >
-            <input type="time" class="date">
-            <input type="number" class="date">
-            <button class="date">Find table</button>
+          <input type="text" id="date-input" class="date">
+          <input type="time" id="time-input" class="date">
+          <input type="number" id="guests-input" class="date">
+          <button class="date">Find table</button>
         </div>
     </div>
     <div class="serve">
@@ -94,7 +101,7 @@
     </div>
     <div class="history">
         <img src="https://s1.1zoom.me/big0/233/Meat_products_Potato_Vegetables_White_background_535614_1280x853.jpg">
-        <div class="htext">Our History</div>
+        <div><div class="htext">Our History</div>
         <div class="heading">Discover our glory dining</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -105,6 +112,7 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <button class="learnmore">Learn more About Us <span class="material-symbols-outlined">trending_flat</span></button>
     </div>
+        </div>
     <div class="menuorder">
         <div class="heading">Our Food Menu</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -125,6 +133,11 @@
                     <div class="htext">breakfast3
                         <p>Lorem ipsum dolor sit </p></div>
                     </div>
+                    <div class="item" id="breakfast">
+                        <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
+                        <div class="htext">breakfast4
+                            <p>Lorem ipsum dolor sit </p></div>
+                        </div>
                 <div class="item" id="breakfast">
                     <img src="https://fitfoodiefinds.com/wp-content/uploads/2021/01/ip-oatmealsq.jpg">
                     <div class="htext">breakfast2
@@ -140,6 +153,31 @@
                     <div class="htext">lunch2
                         <p>Lorem ipsum dolor sit </p></div>
                     </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch3
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch3
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch3
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch3
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
+                <div class="item" id="lunch">
+                    <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
+                    <div class="htext">lunch3
+                        <p>Lorem ipsum dolor sit </p></div>
+                </div>
                 <div class="item" id="lunch">
                     <img src="https://www.theflavorbender.com/wp-content/uploads/2018/02/Sheet-Pan-Pancakes-The-Flavor-Bender-Featured-Image-SQ-7.jpg">
                     <div class="htext">lunch3
@@ -189,7 +227,7 @@
             <img src="/imgs/4.png" class="img">
     </div>
     <div class="subcribe">
-        <div>
+        <div class="text2">
         <div class="htext">be always updated with us</div>
         <p>sign in newsletter and get 25%  Special<br> discount</p>
         <br>
@@ -212,6 +250,7 @@
                 <img src="https://assets.bonappetit.com/photos/5b9009799915d52d4edc0f73/16:9/w_4992,h_2808,c_limit/basically-pasta-pomodoro-1.jpg" onclick="image('https://assets.bonappetit.com/photos/5b9009799915d52d4edc0f73/16:9/w_4992,h_2808,c_limit/basically-pasta-pomodoro-1.jpg')">
                 <img src="imgs/4.jpg" onclick="image('imgs/4.jpg')">
                 <img src="imgs/5.jpg" onclick="image('imgs/5.jpg')">
+                <img src="imgs/1.jpg" onclick="image('imgs/1.jpg')">
             </div>
             <img src="imgs/1.jpg" id="main">
             
@@ -246,7 +285,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, 
             culpa.<br> Accusamus, harum culpa eaque .</p>
 
-            <div class="chefprofile">
+            <div class="chefprofile" id="chepro" >
+                <div style="display: flex; flex-direction: row;width: fit-content;">
                 <div class="chefcard">
                     <img src="/img2/4.png">
                     <div class="htext">best chef</div>
@@ -262,10 +302,75 @@
                     <div class="htext">best chef</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipis</p>
                 </div>
+                <div class="chefcard">
+                    <img src="/img2/5.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/6.jpeg">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/4.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/4.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/5.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
+                <div class="chefcard">
+                    <img src="/img2/5.png">
+                    <div class="htext">best chef</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                </div>
             </div>
+        </div>
+        <div class="scroller" id="scro">
+            <button onclick="srolling(0)"></button>
+            <button onclick="srolling(1)"></button>
+            <button onclick="srolling(2)"></button>
+        </div>
     </div>
     <footer>
-
+<div class="mainlink">
+<p>main links</p>
+<a href="">home</a>
+<a href="">about</a>
+<a href="">blog</a>
+<a href="">menu</a>
+<a href="">contact</a>
+<a href="">reservation</a>
+</div>
+<div class="mainlink">
+    <p>food menu</p>
+    <a href="">italian food</a>
+    <a href="">thai food</a>
+    <a href="">japanese food</a>
+    <a href="">veggie food</a>
+    <a href="">chinese food</a>
+    <a href="">carribian dessert</a>
+    </div>
+    <div class="mainlink">
+        <p>location</p>
+        <a href="">4300 S VERMONT AVE<br> LOS ANGELES CA 90037-2412 <br>USA
+        <br><br>info@restaurentmail.com</a>
+        </div>
+        <div class="mainlink">
+            <p>newsletter</p>
+            <div class="news">
+            <input type="email" placeholder="Enter email">
+            <button><i class="fa fa-paper-plane"> </i></button>
+            </div>
+            </div>
     </footer>
 </body>
 </html>

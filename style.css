@@ -1,7 +1,9 @@
-*{
+body{
     margin: 0%;
-    overflow-x: hidden;
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
 }
+
 :root{
     --grey:rgb(228, 228, 228);
     --font:'Great Vibes', cursive;
@@ -13,7 +15,7 @@
 /*social*/
 .social{
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: white;
     box-sizing: border-box;
     padding-left: 20%;
@@ -61,6 +63,12 @@ header img{
 .option{
     float: right;
     margin-top: 20px;
+    width:fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(29, 29, 29);
+    overflow: hidden;
 }
 .option a{
     color: white;
@@ -69,7 +77,6 @@ header img{
     font-family: var(--font2);
     text-transform: capitalize;
     font-size: 14px;
-    transition: 0.5s;
 }
 .option a:hover{
     color: var(--orange);
@@ -80,8 +87,9 @@ header img{
     margin-right: 0ch;
 }
 .option a span{
-    float: right;
-    margin-top: -2px;
+    
+    margin-bottom: -7px;
+    overflow: hidden;
 }
 /*order place*/
 .order{
@@ -89,8 +97,8 @@ header img{
     height: fit-content;
     text-align: center;
     box-sizing: border-box;
-    padding-left: 20vw;
-    padding-right:20vw ;
+    padding-left: 20%;
+    padding-right:20% ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/9/m/r/p94632-164430420162021749d33a6.jpg?tr=tr:n-xlarge");
 }
 
@@ -100,6 +108,7 @@ h1{
     color: white;
     padding-top: 150px;
     padding-bottom: 30px;
+    margin-top: 0%;
 }
 .order p{
     font-size: 18px;
@@ -124,22 +133,24 @@ p{
     font-family: var(--font2);
     font-size: 14px;
     padding-bottom: 5px;
+    overflow: hidden;
 }
 .getstarted span{
     color: white; 
     font-size: 30px !important;
     margin-bottom: -10px;
     font-weight: 100;
+    overflow: hidden;
     
 }
 .booking{
     width: 100%;
-    height: 125px;
+    height: fit-content;
     background-color: rgba(53, 53, 53, 0.4);
     border-radius: 5px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
 }
 .date{
     width: 80%;
@@ -149,12 +160,12 @@ p{
     color: white;
     border-radius: 5px;
     outline: 0cap;
-    margin: auto 10px;
+    margin: 25px 20px;
 }
 /*features section*/
 .serve{
     width: 100%;
-    height: 80px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
@@ -174,20 +185,18 @@ p{
     font-size: 45px !important;
     overflow: hidden;
     margin-top: 15px;
+    padding-right: 10px;
     color: var(--orange);
     float: left;
-    padding-right: 0%;
 }
 h2{
     font-family: var(--font2);
     font-size: 15px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 0px;
     color: black;
 }
 .food p{
-    padding-left: 20px;
+    margin-top: 0px;
 }
 /*our history*/
 .history{
@@ -229,6 +238,7 @@ h2{
     border: 0cap;
     margin-top: 30px;
     border-radius: 2px;
+    margin-bottom: 50px;
 }
 .learnmore span{
     font-weight: 100;
@@ -236,7 +246,7 @@ h2{
     margin-right: 15px;
     margin-left: -10px;
     margin-top: -4px;
-
+    overflow: hidden;
 }
 /*food menu*/
 .menuorder{
@@ -266,21 +276,26 @@ h2{
     border: 0px;
     width: 80px;
 }
+.all:nth-of-type(1){
+    color: red;
+}
 .menu{
     width:60%;
     height: 450px;
-    background-color: transparent;
+    background-color: white;
     border: 3px solid var(--orange);
     border-style: dashed;
     margin: 0px auto;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 95px 95px 95px;
+    z-index: 100;
+    overflow-y: scroll;
 }
 .item{
     width: 90%;
     height: 90px;
-    background-color: transparent;
+    background-color: white;
     border-bottom: 2px solid var(--orangetrans);
     margin: 0 5%;
 }
@@ -306,13 +321,12 @@ h2{
    left: -175px;
    top: 0;
    height: 100%;
-   z-index: 0;
    opacity: 0.4;
 }
 /*suscription*/
 .subcribe{
     width: 100%;
-    height: 240px;
+    height:fit-content;
     background-color: var(--orange);
     box-sizing: border-box;
     padding-left: 20%;
@@ -337,7 +351,7 @@ h2{
     text-transform: capitalize;
 }
 .email{
-    width: 250px;
+    width: 90%;
     height: 30px;
     border: 2px solid white;
     background-color: transparent;
@@ -354,6 +368,8 @@ h2{
     border-radius: 2px;
     font-family: var(--font2);
     outline: 0ch;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 ::placeholder{
     opacity: 1;
@@ -361,6 +377,8 @@ h2{
 
 form{
     margin: auto 50px;
+    display: flex;
+    flex-direction: row;
 }
 /*gallary*/
 .foodimg{
@@ -372,6 +390,7 @@ form{
     url("https://img.freepik.com/premium-photo/many-red-spice-chili-peppers-free-falling-background_488220-61352.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 50px;
 }
 .foodimg h1{
     color: var(--orange);
@@ -380,24 +399,30 @@ form{
 .carousal{
     width: 60%;
     margin: 50px auto;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
     position: relative;
+    padding-bottom: 50px;
 }
 .carousal img{
     width: 100%;
 }
 .gallary{
     width: 100%;
-    height: 100px;
+    height:fit-content;
     background-color: rgb(0, 0, 0,0.4);
     position: absolute;
     bottom: 0px;
+    overflow-y: hidden;
+    overflow-x: scroll;
     display: flex;
     flex-direction: row;
+    scrollbar-width: none;
 }
 .gallary img{
-    height: 90px;
-    margin: 5px;
     width: 100%;
+    height:fit-content;
+    margin: 5px;
 }
 /*feedback and special food*/
 .feedback{
@@ -412,13 +437,13 @@ form{
 .img2{
     position: absolute;
     height: 100%;
-    right:-50px;
+    right:-200px;
     top: 0;
     opacity: 0.4;
 }
 .clientfeed{
     width: 40%;
-    height: 500px;
+    height: fit-content;
     background-image: linear-gradient(var(--orangetrans),var(--orangetrans)),url(/imgs/2.jpg);
     text-align: center;
 }
@@ -427,8 +452,11 @@ form{
     padding-top: 70px;
 }
 .clientimg{
-    width: 100%;
+    width: fit-content;
     height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
 }
 .clientimg img{
     width: 150px;
@@ -459,9 +487,10 @@ form{
     padding: 0px 50px;
 }
 .special{
-    width: 500px;
-    height: 500px;
+    width:fit-content;
+    height: fit-content;
     text-align: center;
+    margin-left:5%;
 }
 .special h1{
     color: var(--orange);
@@ -494,20 +523,25 @@ form{
 .chefprofile{
     width: 100%;
     height: 500px;
-    display: flex;
-    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    scrollbar-width: none;
+    transition: 0.5s;
+    scroll-behavior: smooth;
 }
 .chefcard{
-    width: 275px;
-    height: 350px;
+    width: 225px;
+    height: 375px;
     background-color: var(--grey2);
     border: 3px solid var(--grey);
     border-radius: 5px;
     margin: 20px;
     text-align: center;
+    
 }
 .chefcard img{
-    width: 70%;
+    width: 150px;
     height: 275px;
     border-bottom: 3px solid var(--grey);
     padding: 0 15%;
@@ -520,8 +554,78 @@ form{
     padding: 0px 30px;
     padding-top: 5px;
 }
+.scroller{
+    width: fit-content;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+.scroller button{
+    width: 20px;
+    height: 20px;
+    border-radius: 200px;
+    border: 0px;
+    background-color: grey;
+}
+.scroller button:nth-child(1){
+    background-color: var(--orange);
+}
+/**footer**/
 footer{
     width: 100%;
-    height: 500px;
+    height: fit-content;
     background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+}
+.mainlink{
+    display:flex;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+.mainlink p{
+    margin-top: 0;
+    font-size: 18px;
+    color: var(--orange);
+    text-transform: capitalize;
+}
+.mainlink a{
+    text-transform: capitalize;
+    font-family: var(--font2);
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.mainlink input{
+    height: 35px;
+    width: 200px;
+    font-family: var(--font2);
+    border: 0ch;
+}
+.mainlink input::placeholder{
+    opacity: 0.5;
+}
+.mainlink button{
+    width: 40px;
+    height: 37px;
+    background-color: var(--orange);
+    color: white;
+    border: 0ch;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+/**hamberger menu**/
+.hamburger{
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    float: right;
+    background-color: transparent;
+    color: var(--orange);
+    border: 0ch;
+    margin: 10px 0px;
 }

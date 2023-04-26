@@ -3,6 +3,18 @@ function image(imgurl){
     document.getElementById("main").src=imgurl;
 }
 
+
+function ham(){
+    var ham = document.getElementById("option");
+    if(ham.style.width=="0px"){
+        ham.style.width="300px";
+    }
+    else{
+        ham.style.width="0px";
+    }
+}
+
+
 function order(item,num){
     var i,but,food,dinner,breakfast,chinese,indian,drink,lunch;
     var l=document.querySelectorAll(".item").length;
@@ -59,4 +71,29 @@ function order(item,num){
         }
     }
 
+}
+
+
+ $(document).ready(function() {
+    $('#date-input').datepicker({
+      dateFormat: 'dd-mm-yy',
+      minDate: 0
+    });
+  });
+
+$(document).ready(function() {
+  $(".hamburger").click(function() {
+    $(".nav-menu").toggle();
+  });
+});
+
+function srolling(num){
+    var scro=document.getElementById("chepro");
+    var but=document.querySelectorAll("#scro button");
+    for(var i=0;i<but.length;i++){
+        but[i].style.backgroundColor="grey";
+    }
+    but[num].style.backgroundColor="rgb(255, 72, 0)";
+
+    scro.scrollLeft=scro.offsetWidth*num;
 }
