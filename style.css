@@ -416,7 +416,7 @@ overflow: hidden;
 }
 .gallary{
     width: 100%;
-    height:fit-content;
+    height:10%;
     background-color: rgb(0, 0, 0,0.4);
     position: absolute;
     bottom: 0px;
