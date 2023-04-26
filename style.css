@@ -56,7 +56,6 @@ header{
     background-color: rgb(29, 29, 29);
     box-sizing: border-box;
     padding: 0 20%;
-    overflow-x: hidden;
 }
 header img{
     width: 100px;
