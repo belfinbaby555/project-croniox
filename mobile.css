@@ -59,6 +59,9 @@
   .mainlink{
    padding: 25px 25px;
   }
+.chefs{
+padding:0 10%;
+}
 }
 @media screen and (max-width:725px) {
     .history img{
