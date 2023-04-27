@@ -428,7 +428,7 @@ overflow: hidden;
 }
 .gallary img{
     width: 100%;
-    height:20%;
+    height:100%;
     margin: 5px;
 }
 /*feedback and special food*/
