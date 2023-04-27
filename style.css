@@ -239,7 +239,7 @@ h2{
     color: white;
     font-family: var(--font2);
     background-color: var(--orange);
-    border: 0cap;
+    border:1px solid var(--orange);
     margin-top: 30px;
     border-radius: 2px;
     margin-bottom: 50px;
