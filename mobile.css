@@ -64,6 +64,10 @@ padding:0 10%;
 }
 }
 @media screen and (max-width:725px) {
+
+::-webkit-scrollbar {
+  width: 0px;
+}
     .history img{
         width:700px;
         float: left;
