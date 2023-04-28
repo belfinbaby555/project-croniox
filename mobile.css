@@ -64,14 +64,11 @@ padding:0 10%;
 }
 }
 @media screen and (max-width:725px) {
-body{
-overflow-x: hidden;
-}
     .history img{
         width:700px;
         float: left;
         margin-right:0px;
-        margin-left: -20%;
+        margin-left: -10%;
     }
     .foodimg h1{
         padding-bottom: 20px;
