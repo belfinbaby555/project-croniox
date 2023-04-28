@@ -64,9 +64,6 @@ padding:0 10%;
 }
 }
 @media screen and (max-width:725px) {
-body{
-margin-right:-10px;
-}
     .history img{
         width:700px;
         float: left;
