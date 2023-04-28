@@ -5,7 +5,6 @@
  }
  header{
     padding: 0 10%;
-width:105%;
  }
  .order{
     padding: 0 10%;
@@ -65,6 +64,9 @@ padding:0 10%;
 }
 }
 @media screen and (max-width:725px) {
+body{
+overflow-x: visible;
+}
     .history img{
         width:700px;
         float: left;
