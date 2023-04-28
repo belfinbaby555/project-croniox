@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns:auto auto;
     grid-template-rows: 80px;
-    padding-right: 0px;
+    padding-right: 50px;
  }
  .food{
     width: 100%;
