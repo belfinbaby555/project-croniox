@@ -148,6 +148,9 @@ margin-right:-10px;
 .chefs{
 padding:0 5%;
 }
+.scroller{
+display:none;
+}
    .hamburger{
       display: block;
    }
