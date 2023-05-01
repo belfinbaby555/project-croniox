@@ -77,7 +77,7 @@ function order(item,num){
  $(document).ready(function() {
     $('#date-input').datepicker({
       dateFormat: 'dd-mm-yy',
-      minDate: 0
+      minDate: Date();
     });
   });
 
