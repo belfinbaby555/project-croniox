@@ -73,20 +73,6 @@ function order(item,num){
 
 }
 
-
- $(document).ready(function() {
-    $('#date-input').datepicker({
-      dateFormat: 'dd-mm-yy',
-      minDate: Date();
-    });
-  });
-
-$(document).ready(function() {
-  $(".hamburger").click(function() {
-    $(".nav-menu").toggle();
-  });
-});
-
 function srolling(num){
     var scro=document.getElementById("chepro");
     var but=document.querySelectorAll("#scro button");
@@ -96,4 +82,14 @@ function srolling(num){
     but[num].style.backgroundColor="rgb(255, 72, 0)";
 
     scro.scrollLeft=scro.offsetWidth*num;
+}
+function dateo(){
+    let d=new Date();
+    let y=d.getFullYear();
+    let m=d.getMonth();
+    let dd=d.getDay();
+    const mon=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    
+    document.getElementsByName('date')[0].placeholder=dd+"-"+mon[m]+"-"+y;
+    document.getElementsByName('time')[0].placeholder=new Date().toLocaleString([], { hour: 'numeric', minute: 'numeric' });;
 }

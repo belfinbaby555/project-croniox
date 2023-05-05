@@ -3,14 +3,21 @@ body{
     overflow-x:hidden ;
     scroll-behavior: smooth;
 }
-
 :root{
     --grey:rgb(228, 228, 228);
     --font:'Great Vibes', cursive;
     --orange:rgb(255, 72, 0);
     --font2: 'Ubuntu', sans-serif;
-    --grey2:rgb(245, 245, 245);
-    --orangetrans:rgba(255, 72, 0, 0.75);
+    --grey2:rgb(250, 250, 250);
+    --orangetrans:rgba(255, 72, 0, 0.589);
+}
+h1{
+    font-family:var(--font) ;
+    font-size: 55px;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    margin-top: 0%;
 }
 /*social*/
 .social{
@@ -23,7 +30,6 @@ body{
     color: black;
     display: flex;
     flex-direction: row;
-    overflow:hidden;
 }
 .social span{
     font-size: 18px !important;
@@ -70,6 +76,7 @@ header img{
     flex-direction: row;
     background-color: rgb(29, 29, 29);
     overflow: hidden;
+    z-index: 2;
 }
 .option a{
     color: white;
@@ -78,6 +85,8 @@ header img{
     font-family: var(--font2);
     text-transform: capitalize;
     font-size: 14px;
+    display: flex;
+    flex-direction: row;
 }
 .option a:hover{
     color: var(--orange);
@@ -85,13 +94,12 @@ header img{
 .option a:nth-of-type(6){
     text-transform: uppercase;
     color: var(--orange);
-    margin-right: 0ch;
 }
 .option a span{
-    
-    margin-bottom: -7px;
     overflow: hidden;
+    margin-top: -3px;
 }
+
 /*order place*/
 .order{
     width: 100vw;
@@ -100,18 +108,18 @@ header img{
     box-sizing: border-box;
     padding-left: 20%;
     padding-right:20% ;
+    padding-bottom: 75px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/9/m/r/p94632-164430420162021749d33a6.jpg?tr=tr:n-xlarge");
-overflow: hidden;
 }
 
-h1{
+.order h1{
     font-family:var(--font) ;
-    font-size: 55px;
+    font-size: 65px;
     color: white;
-    padding-top: 150px;
-    padding-bottom: 30px;
+    padding-top:75px;
+    padding-bottom: 75px;
     margin-top: 0%;
-margin-right:0px;
+    margin-bottom: 0%;
 }
 .order p{
     font-size: 18px;
@@ -119,8 +127,8 @@ margin-right:0px;
     overflow: hidden;
 }
 p{
-    color: grey;
-    font-size: 12px;
+    color: rgb(104, 104, 104);
+    font-size: 13px;
     font-family:var(--font2);
     position: relative;
     line-height: 20px;
@@ -151,7 +159,6 @@ p{
     height: fit-content;
     background-color: rgba(53, 53, 53, 0.4);
     border-radius: 5px;
-    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
 }
@@ -159,9 +166,20 @@ p{
     width: 80%;
     height: 30px;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid rgb(168, 168, 168);
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
+    outline: 0cap;
+    margin: 25px 20px;
+}
+.date2{
+    width: 80%;
+    height: 35px;
+    background-color: var(--orange);
+    border: 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
     outline: 0cap;
     margin: 25px 20px;
 }
@@ -172,11 +190,10 @@ p{
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
-    overflow: hidden;
 }
 .food{
     width: 25%;
-    height: 80px;
+    height: 90px;
     border:2px solid var(--grey);
     box-sizing: border-box;
     border-left: 1px solid var(--grey);
@@ -194,8 +211,8 @@ p{
     float: left;
 }
 h2{
-    font-family: var(--font2);
-    font-size: 15px;
+    font-family: sans-serif;
+    font-size: 17px;
     margin-bottom: 0px;
     color: black;
 }
@@ -208,7 +225,7 @@ h2{
     height: fit-content;
     background-color: white;
     box-sizing: border-box;
-    padding-left:20%;    
+    padding-left:20%;
     overflow: hidden;
 }
 .history img{
@@ -239,11 +256,10 @@ h2{
     color: white;
     font-family: var(--font2);
     background-color: var(--orange);
-    border:1px solid var(--orange);
+    border: 0cap;
     margin-top: 30px;
     border-radius: 2px;
-    margin-bottom: 50px;
-outline:0px;
+    margin-bottom: 75px;
 }
 .learnmore span{
     font-weight: 100;
@@ -260,13 +276,17 @@ outline:0px;
     background-color: var(--grey2);
     text-align: center;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
     box-sizing: border-box;
-    padding-left: 5%;
-    overflow: hidden;
+    padding-left: 4%;
+    background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),
+    url("https://img.freepik.com/free-photo/copy-space-italian-food-ingredients_23-2148551732.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menuorder .heading{
-    padding-top: 100px;
+    padding-top: 75px;
 }
 .menucategory{
     width: 100%;
@@ -297,7 +317,10 @@ outline:0px;
     grid-template-rows: 95px 95px 95px;
     z-index: 100;
     overflow-y: scroll;
+    border-radius: 7px;
+    scrollbar-width: 5px;
 }
+
 .item{
     width: 90%;
     height: 90px;
@@ -338,7 +361,7 @@ outline:0px;
     padding-left: 20%;
     display: flex;
     flex-direction: row;
-overflow: hidden;
+    padding-bottom: 40px;
 }
 .subcribe img{
     width: 300px;
@@ -367,7 +390,7 @@ overflow: hidden;
     font-family: var(--font2);
 }
 .submit{
-    width: 100px;
+    width: 120px;
     height: 35px;
     background-color: white;
     color: var(--orange);
@@ -394,30 +417,29 @@ form{
     text-align: center;
     background-color: white;
     background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),
-    url("https://img.freepik.com/premium-photo/many-red-spice-chili-peppers-free-falling-background_488220-61352.jpg");
+    url("https://as2.ftcdn.net/v2/jpg/01/05/59/43/1000_F_105594325_Fr2aMw6NpKtsJlYBg2l6JPCM67sWWfIb.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
-overflow: hidden;
+    padding-bottom: 75px;
 }
 .foodimg h1{
     color: var(--orange);
-    padding-top: 70px;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    margin-bottom: 0%;
 }
 .carousal{
     width: 60%;
     margin: 50px auto;
     margin-bottom: 0px;
-    padding-bottom: 50px;
     position: relative;
-    padding-bottom: 50px;
 }
 .carousal img{
     width: 100%;
 }
 .gallary{
     width: 100%;
-    height:20%;
+    height:fit-content;
     background-color: rgb(0, 0, 0,0.4);
     position: absolute;
     bottom: 0px;
@@ -429,7 +451,7 @@ overflow: hidden;
 }
 .gallary img{
     width: 100%;
-    height:100%;
+    height:fit-content;
     margin: 5px;
 }
 /*feedback and special food*/
@@ -441,7 +463,6 @@ overflow: hidden;
     display: flex;
     flex-direction: row;
     position: relative;
-overflow:hidden;
 }
 .img2{
     position: absolute;
@@ -453,7 +474,8 @@ overflow:hidden;
 .clientfeed{
     width: 40%;
     height: fit-content;
-    background-image: linear-gradient(var(--orangetrans),var(--orangetrans)),url(imgs/2.jpg);
+    background-image: linear-gradient(var(--orangetrans),var(--orangetrans)),url(/imgs/2.jpg);
+    background-size:cover;
     text-align: center;
 }
 .clientfeed h1{
@@ -523,18 +545,20 @@ overflow:hidden;
     text-align: center;
     box-sizing: border-box;
     padding: 0 20%;
-overflow: hidden;
+    padding-bottom: 75px;
 }
 .chefs h1{
     color: var(--orange);
     padding-top: 75px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
 }
 .chefprofile{
     width: 100%;
-    height: 500px;
+    height: fit-content;
+    padding-top: 10px;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y:visible ;
     position: relative;
     scrollbar-width: none;
     transition: 0.5s;
@@ -542,17 +566,22 @@ overflow: hidden;
 }
 .chefcard{
     width: 225px;
-    height: 375px;
+    height: 307px;
     background-color: var(--grey2);
-    border: 3px solid var(--grey);
+    border: 3px solid white;
     border-radius: 5px;
     margin: 20px;
     text-align: center;
-    
+    box-shadow: 1px 1px 5px rgb(177, 177, 177);
+    transition: 0.2s;
+}
+.chefcard:hover{
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 2px 2px 10px rgb(56, 56, 56);
 }
 .chefcard img{
-    width: 150px;
-    height: 275px;
+    width: 140px;
+    height: 220px;
     border-bottom: 3px solid var(--grey);
     padding: 0 15%;
 }
@@ -561,8 +590,9 @@ overflow: hidden;
     padding-top: 5px;
 }
 .chefcard p{
-    padding: 0px 30px;
-    padding-top: 5px;
+    padding: 5px 15px;
+    margin-top: 0%;
+    
 }
 .scroller{
     width: fit-content;
@@ -586,16 +616,17 @@ footer{
     background-color: rgb(46, 46, 46);
     display: flex;
     flex-direction: row;
-    overflow:hidden;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .mainlink{
     display:flex;
     flex-direction: column;
-    padding: 50px 50px;
+    margin: 50px auto;
 }
 .mainlink p{
     margin-top: 0;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--orange);
     text-transform: capitalize;
 }
@@ -604,7 +635,11 @@ footer{
     font-family: var(--font2);
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.mainlink a:hover{
+    color: var(--orange);
 }
 .mainlink input{
     height: 35px;
@@ -613,7 +648,7 @@ footer{
     border: 0ch;
 }
 .mainlink input::placeholder{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .mainlink button{
     width: 40px;
@@ -638,5 +673,5 @@ footer{
     background-color: transparent;
     color: var(--orange);
     border: 0ch;
-    padding: 10px 0px;
+    margin: 10px 0px;
 }

@@ -1,4 +1,8 @@
 @media screen and (max-width:900px) {
+   body, html{
+      width: 100vw;
+      overflow-x: hidden;
+  }
  .social{
     padding-left: 10%;
     padding-right: 10%;
@@ -8,12 +12,13 @@
  }
  .order{
     padding: 0 10%;
+    padding-bottom: 75px;
  }
  .serve{
     display: grid;
     grid-template-columns:auto auto;
     grid-template-rows: 80px;
-    padding-right: 50px;
+    padding-right: 10px;
  }
  .food{
     width: 100%;
@@ -48,7 +53,7 @@
    margin: 0 auto;
   }
   h1{
-   font-size: 45px !important;
+   font-size: 55px !important;
   }
   .order p{
    font-size: 15px;
@@ -59,14 +64,8 @@
   .mainlink{
    padding: 25px 25px;
   }
-.chefs{
-padding:0 10%;
-}
 }
 @media screen and (max-width:725px) {
-body{
-overflow-x: visible;
-}
     .history img{
         width:700px;
         float: left;
@@ -94,6 +93,10 @@ overflow-x: visible;
       flex-direction: column;
    }
    .date{
+      margin: 10px auto;
+      width: 50%;
+   }
+   .date2{
       margin: 10px auto;
       width: 50%;
    }
@@ -143,24 +146,25 @@ overflow-x: visible;
    }
    .option a{
       margin: 15px 50px;
-      float: left;
+      
    }
-.chefs{
-padding:0 5%;
-}
-.scroller{
-display:none;
-}
+   .option a span{
+      overflow: hidden;
+      margin-top: -4px;
+  }
    .hamburger{
       display: block;
    }
    footer{
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto ;
+      flex-direction: column;
+   }
+   .news{
+      margin: 0% auto;
    }
    .mainlink{
       padding: 15px 15px;
+      margin: 0%;
+      text-align: center;
      }
 }
 
