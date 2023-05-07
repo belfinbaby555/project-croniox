@@ -10,6 +10,9 @@
  header{
     padding: 0 10%;
  }
+ .food{
+   border-top: 0ch;
+ }
  .order{
     padding: 0 10%;
     padding-bottom: 75px;
@@ -85,6 +88,9 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 95px 95px 95px;
+    }
+    .social{
+      display: none;
     }
     .history img{
       width: 400px;
@@ -165,6 +171,9 @@
       padding: 15px 15px;
       margin: 0%;
       text-align: center;
+     }
+     .scroller{
+      display: none;
      }
 }
 

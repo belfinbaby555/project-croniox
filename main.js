@@ -83,13 +83,27 @@ function srolling(num){
 
     scro.scrollLeft=scro.offsetWidth*num;
 }
+$(document).ready(function() {
+          
+    $(function() {
+        $( "#date" ).datepicker({
+        dateFormat: 'dd-mm-yy'
+    });
+})
+})
+
+
+$(document).ready(function(){
+    $('#time-input').timepicker({});
+});
+
+
 function dateo(){
     let d=new Date();
     let y=d.getFullYear();
     let m=d.getMonth();
     let dd=d.getDay();
-    const mon=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     
-    document.getElementsByName('date')[0].placeholder=dd+"-"+mon[m]+"-"+y;
+    document.getElementsByName('date')[0].placeholder=dd+"-"+m+"-"+y;
     document.getElementsByName('time')[0].placeholder=new Date().toLocaleString([], { hour: 'numeric', minute: 'numeric' });;
 }
