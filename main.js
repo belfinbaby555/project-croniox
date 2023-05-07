@@ -83,27 +83,21 @@ function srolling(num){
 
     scro.scrollLeft=scro.offsetWidth*num;
 }
-$(document).ready(function() {
-          
-    $(function() {
-        $( "#date" ).datepicker({
-        dateFormat: 'dd-mm-yy'
-    });
-})
-})
-
-
-$(document).ready(function(){
-    $('#time-input').timepicker({});
-});
-
 
 function dateo(){
-    let d=new Date();
-    let y=d.getFullYear();
-    let m=d.getMonth();
-    let dd=d.getDay();
-    
-    document.getElementsByName('date')[0].placeholder=dd+"-"+m+"-"+y;
-    document.getElementsByName('time')[0].placeholder=new Date().toLocaleString([], { hour: 'numeric', minute: 'numeric' });;
+    const date=new Date();
+    document.getElementById('time').value=date.toISOString().substring(11,16);
+    document.getElementById('date').value= date.toISOString().substring(0,10);
+}
+function peo(){
+    let vrt=document.getElementById("people").innerText;
+    b=Number(vrt);
+
+    if(b>=6){
+        b=0;
+    }
+    else{
+        b=b+1;
+    }
+    document.getElementById('people').innerHTML=b;
 }

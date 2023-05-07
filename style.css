@@ -175,18 +175,28 @@ p{
     width: 80%;
     height: 30px;
     background-color: transparent;
-    border: 2px solid rgb(168, 168, 168);
+    border: 1px solid rgba(168, 168, 168, 0.658);
     color: white;
     border-radius:4px;
     outline: 0cap;
     margin: 25px 20px;
+    text-align: left;
+    font-weight: 100;
 }
-.date::-webkit-input-placeholder{
-color: white;
-font-weight: 100;
+#date ,#time{
+    background-color: transparent;
+    color: white;
+    border: 0cm;
 }
-.inp{
-    width: 80%;
+
+#date,#time:focus{
+    outline: 0cqb;
+}
+.date span{
+    color: white;
+    font-size:18px ;
+    padding-right: 5px;
+    float: left;
 }
 .date2{
     width: 80%;
@@ -417,6 +427,16 @@ h2{
     color: white;
     border-style: dashed;
     font-family: var(--font2);
+}
+.email:focus{
+    outline: 0cap;
+    border: 2px solid white;
+    border-style: dashed;
+}
+.email:active{
+    outline: 0cqh;
+    border: 2px solid white;
+    border-style: dashed;
 }
 .email::-webkit-input-placeholder{
 color: white;
