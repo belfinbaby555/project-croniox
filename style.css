@@ -506,7 +506,7 @@ form{
 .clientfeed{
     width: 40%;
     height: fit-content;
-    background-image: linear-gradient(var(--orangetrans),var(--orangetrans)),url(/imgs/2.jpg);
+    background-image: linear-gradient(var(--orangetrans),var(--orangetrans)),url(imgs/2.jpg);
     background-size:cover;
     text-align: center;
 }
