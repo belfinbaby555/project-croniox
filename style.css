@@ -193,7 +193,7 @@ p{
     margin: auto 0px;
 }
 ::-webkit-calendar-picker-indicator {
-    filter: invert(1);
+    filter: opacity(0);
 }
 #people{
     padding-left:5px ;
