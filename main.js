@@ -90,7 +90,7 @@ function dateo(){
     document.getElementById('date').value= date.toISOString().substring(0,10);
 }
 function peo(){
-    let vrt=document.getElementById("people").innerText;
+    let vrt=document.getElementById("people").innerText.slice(0,1);
     b=Number(vrt);
 
     if(b>=6){
@@ -99,5 +99,5 @@ function peo(){
     else{
         b=b+1;
     }
-    document.getElementById('people').innerHTML=b;
+    document.getElementById('people').innerHTML=b+" people";
 }
